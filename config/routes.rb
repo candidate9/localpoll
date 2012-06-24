@@ -4,6 +4,7 @@ Localpoll::Application.routes.draw do
     resource :results, :only => :show
   end
 
+  resource :post_codes, :only => :show
 
   resources :constituency, :only => :show, :path => "" do
     resources :local_poll, :only => :show, :path => "" do
@@ -13,8 +14,6 @@ Localpoll::Application.routes.draw do
     end
   end
 
+  root :to => "homepage#show"
 
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
 end
