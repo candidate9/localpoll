@@ -13,7 +13,7 @@
       <% end %>
     <% end %>
     <%= content_tag "li" do %>
-      None of the Above: <%= @local_poll.votes.where(:candidate_id => nil).size %>
+      None of the Above: <%= @local_poll.votes.where(:candidate_id => nil).count %>
     <% end %>
   </ul>
 
