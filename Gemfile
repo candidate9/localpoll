@@ -5,6 +5,7 @@ gem 'rails', '3.2.3'
 # Use SQLite3 for easier develoment and testing
 group :development, :test do
   gem 'sqlite3'
+  gem 'shoulda-matchers'
 end
 
 # Use PostGres in production
