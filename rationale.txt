@@ -1,0 +1,19 @@
+
+
+Brief:
+
+"We would like you to build a demo web application that could be used alongside a live-streamed election broadcast, to provide an unscientific straw-poll of the voting habits of the viewers.
+
+The demo should allow users to specify their parliamentary (Westminster) constituency and enter answers to the questions “Are you going to vote?” and “Who are you going to vote for?”. It should display the results of these questions nationally and for each constituency."
+
+
+Q: WHY would people answer the poll?
+
+A: to see results of the poll? Perhaps, but making people fill in the poll in order to see results feels a bit sucky - and what if they want to see results from other constituencies (or at a later date). Perhaps filling out the poll is a social act - easy to share elsewhere. Probably needs to be a bit more meaningful though - perhaps there's an optional free text box where you can say 'why' you're voting for that particular candidate.
+
+Q: Why would people go the website / application?
+
+A: to see poll results? Hmm, too weak, and likely to be less reliable than widely published polls. Perhaps the local poll results might be more useful though, as you don't usually get these. Perhaps it's partly just to see who the candidates are (not always that easy to get hold of local lists - often buried on websites in PDFs). Perhaps this is made more valuable by linking out to the respective local candidates websites / campaign page?
+
+
+Also, bit confused by the brief - if this is being used alongside a live-streamed election broadcast, the polling stations are usually closed by then, making the questions in the wrong tense. Either the questions should change, or this should be used in the run up to an election instead.
