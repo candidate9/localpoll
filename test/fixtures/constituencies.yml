@@ -1,0 +1,5 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+edinburgh:
+  name: Edinburgh
+  ons_code: WB045
