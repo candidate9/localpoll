@@ -16,7 +16,11 @@ class VotesControllerTest < ActionController::TestCase
       :local_poll_id => local_polls(:edinburgh_general_election_2012).id,
       :vote => { :candidate_id => candidates(:mr_happy).id }
 
-    assert_redirected_to(:controller => :local_poll, :id => local_polls(:edinburgh_general_election_2012).id, :action => :show, :constituency_id => constituencies(:edinburgh).ons_code)
+    assert_redirected_to(
+      :constituency_id => constituencies(:edinburgh).ons_code,
+      :local_poll_id => local_polls(:edinburgh_general_election_2012).id,
+      :controller => :local_results,
+      :action => :show)
 
 
   end

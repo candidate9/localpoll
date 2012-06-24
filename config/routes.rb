@@ -4,6 +4,7 @@ Localpoll::Application.routes.draw do
     resources :local_poll, :only => :show, :path => "" do
       resource :vote, :only => :show, :controller => :votes
       resource :votes, :only => :create
+      resource :results, :only => :show, :controller => :local_results
     end
   end
 

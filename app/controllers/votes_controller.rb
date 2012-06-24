@@ -13,20 +13,10 @@ class VotesController < ApplicationController
     find_constituency
     find_local_poll
 
-    @vote = @local_poll.votes.new(params[:vote])
+    @vote = @local_poll.votes.new
+    @vote.candidate = @local_poll.candidates.find_by_id(params[:vote][:candidate_id])
     @vote.save!
-    redirect_to constituency_local_poll_path(@constituency, @local_poll)
-  end
-
-
-  private
-
-  def find_constituency
-    @constituency = Constituency.find_by_ons_code!(params[:constituency_id])
-  end
-
-  def find_local_poll
-    @local_poll = @constituency.local_polls.find(params[:local_poll_id])
+    redirect_to constituency_local_poll_results_path(@constituency, @local_poll)
   end
 
 end
