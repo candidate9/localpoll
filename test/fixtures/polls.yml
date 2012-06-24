@@ -1,0 +1,4 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+general_election_2012:
+  name: General Election 2012

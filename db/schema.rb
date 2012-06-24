@@ -10,11 +10,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120624113859) do
+ActiveRecord::Schema.define(:version => 20120624114402) do
 
   create_table "constituencies", :force => true do |t|
     t.string   "name"
     t.string   "ons_code"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "local_polls", :force => true do |t|
+    t.integer  "constituency_id"
+    t.integer  "poll_id"
+    t.string   "name"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "political_parties", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "polls", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
