@@ -4,4 +4,8 @@ class Constituency < ActiveRecord::Base
   has_many :local_polls
   has_many :postcodes
 
+  def to_param
+    ons_code
+  end
+
 end

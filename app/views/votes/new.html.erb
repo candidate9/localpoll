@@ -1,0 +1,24 @@
+<% content_for :title, "Vote in " + @local_poll.name %>
+
+
+<article>
+  <header><h1>Vote in <%= @local_poll.name %></h1></header>
+
+  <%= form_for @vote, :url => constituency_local_poll_votes_path(@local_poll.constituency, @local_poll) do |f| %>
+    <% @local_poll.candidates.each do |candidate| %>
+      <div class="vote-option">
+        <%= f.radio_button :candidate_id, candidate.id %>
+        <%= content_tag "span", candidate.name, :class => "candidate-name" %>
+        <%= content_tag "span", candidate.affilliation, :class => :affilliation %>
+      </div>
+    <% end %>
+    <div class="vote-option">
+      <%= f.radio_button :candidate_id, nil %>
+      <%= content_tag "span", "None of the above.", :class => "nil-vote" %>
+    </div>
+
+    <%= f.submit "Vote" %>
+
+  <% end %>
+
+</article>

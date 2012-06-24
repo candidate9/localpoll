@@ -4,5 +4,6 @@ class LocalPoll < ActiveRecord::Base
   belongs_to :poll
   belongs_to :constituency
   has_many :candidates
+  has_many :votes
 
 end
