@@ -1,0 +1,22 @@
+<% content_for :title, "Results for " + @poll.name %>
+
+<article>
+  <header><h1>Results for <%= @poll.name %></h1></header>
+
+  <ul>
+    <% @poll.political_parties.each do |political_party| %>
+      <%= content_tag "li" do %>
+        <%= content_tag "span", political_party.name, :class => :name %>
+        <%= political_party.votes_in(@poll).size %>
+      <% end %>
+    <% end %>
+    <%= content_tag "li" do %>
+      Independent candidates <%= @poll.independent_votes.size %>
+    <% end %>
+    <%= content_tag "li" do %>
+      'None of the above' votes <%= @poll.nil_votes.size %>
+    <% end %>
+  </ul>
+
+
+</article>

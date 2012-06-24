@@ -1,5 +1,10 @@
 Localpoll::Application.routes.draw do
 
+  resources :polls, :only => :show do
+    resource :results, :only => :show
+  end
+
+
   resources :constituency, :only => :show, :path => "" do
     resources :local_poll, :only => :show, :path => "" do
       resource :vote, :only => :show, :controller => :votes

@@ -16,4 +16,7 @@
       None of the Above: <%= @local_poll.votes.where(:candidate_id => nil).size %>
     <% end %>
   </ul>
+
+  <%= link_to "View national results", poll_results_path(@local_poll.poll) %>
+
 </article>

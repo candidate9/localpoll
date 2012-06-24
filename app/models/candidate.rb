@@ -5,6 +5,7 @@ class Candidate < ActiveRecord::Base
   belongs_to :local_poll
   has_many :votes
 
+  scope :with_political_party, where("political_party_id IS NOT NULL")
 
   def affilliation
     political_party ? political_party.name : "Independent"

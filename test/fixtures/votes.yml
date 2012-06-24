@@ -1,6 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-mr_happy_vode:
+mr_happy_vote:
   candidate: mr_happy
   local_poll: edinburgh_general_election_2012
 
