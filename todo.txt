@@ -1,0 +1,9 @@
+
+4 hours
+
+8  25 min sprints
+
+
+a) Sketch out app and the main flow
+b) Sketch out domain model and create basic AR models
+c)
