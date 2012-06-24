@@ -4,20 +4,24 @@
 <article>
   <header><h1>Vote in <%= @local_poll.name %></h1></header>
 
-  <%= form_for @vote, :url => constituency_local_poll_votes_path(@local_poll.constituency, @local_poll) do |f| %>
-    <% @local_poll.candidates.each do |candidate| %>
+  <%= form_for @vote, :url => constituency_local_poll_votes_path(@local_poll.constituency, @local_poll), :html => {:class => "vote"} do |f| %>
+
+    <div class="vote-options">
+      <% @local_poll.candidates.each do |candidate| %>
+        <div class="vote-option">
+          <%= f.radio_button :candidate_id, candidate.id %>
+          <%= content_tag "span", candidate.name, :class => "option-name" %>
+          <%= content_tag "span", candidate.affilliation, :class => :affilliation %>
+        </div>
+      <% end %>
       <div class="vote-option">
-        <%= f.radio_button :candidate_id, candidate.id %>
-        <%= content_tag "span", candidate.name, :class => "candidate-name" %>
-        <%= content_tag "span", candidate.affilliation, :class => :affilliation %>
+        <%= f.radio_button :candidate_id, "0" %>
+        <%= content_tag "span", "None of the above.", :class => "nil-vote option-name" %>
+        <span class="affilliation"></span>
       </div>
-    <% end %>
-    <div class="vote-option">
-      <%= f.radio_button :candidate_id, "0" %>
-      <%= content_tag "span", "None of the above.", :class => "nil-vote" %>
     </div>
 
-    <%= f.submit "Vote" %>
+    <%= f.submit "Vote", :class => "vote" %>
 
   <% end %>
 

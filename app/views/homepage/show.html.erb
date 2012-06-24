@@ -10,8 +10,10 @@
     <li>See the poll results for your area</li>
   </ol>
 
-  <%= form_tag post_codes_path, :method => :get do %>
-    <%= text_field_tag :postcode %>
+  <p class="call-to-action">Look up your constituency by post code:</p>
+
+  <%= form_tag post_codes_path, :method => :get, :class => "post-code-lookup" do %>
+    <%= text_field_tag :postcode, nil, :placeholder => "ZZ9 ZZA", :class => "post-code", :maxlength => 10 %>
     <%= submit_tag "Go" %>
   <% end %>
 

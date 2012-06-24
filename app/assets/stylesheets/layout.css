@@ -1,0 +1,27 @@
+body {padding: 0; margin: 0;}
+.site-name { display: block; padding: 0.5em; }
+article { max-width: 600px; margin-left: auto; margin-right: auto; padding: .5em; margin-top: 1em;}
+
+article header, article header h1 {margin: 0;}
+
+li {margin-bottom: .5em;}
+
+.post-code-lookup { max-width: 80%; margin: auto;}
+.post-code-lookup .post-code { padding: .2em;}
+
+.action-button { padding: .2em; display: block; max-width: 60%; margin: auto; border-width: 1px;}
+
+.or {display: block; margin: 1em;}
+
+.alternative-action {display: block;}
+
+form.vote {margin: 1em 0;}
+input.vote { min-width: 20%; display: block; margin: 2em auto;}
+
+.vote-options,
+.vote-options .vote-option {border-collapse: collapse; border: 2px solid black;}
+
+.vote-options {display: table; width: 100%;}
+.vote-option {display: table-row; line-height: 3em;}
+.vote-option input {display: table-cell; margin: 1em;}
+.vote-option .option-name {display: table-cell;   }

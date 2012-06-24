@@ -13,9 +13,11 @@
     <% end %>
   </ul>
 
-  <%= link_to "Live here? Vote in our unscientific poll", constituency_local_poll_vote_path(@local_poll.constituency, @local_poll)%>
-  or
-  <%= link_to "view results", constituency_local_poll_results_path(@local_poll.constituency, @local_poll) %>
+  <%= link_to "Live here? Vote in our unscientific poll", constituency_local_poll_vote_path(@local_poll.constituency, @local_poll), :class => "action-button" %>
+
+  <span class="or">or</span>
+
+  <span class="alternative-action"><%= link_to "view results", constituency_local_poll_results_path(@local_poll.constituency, @local_poll) %></span>
 
 
 </article>
