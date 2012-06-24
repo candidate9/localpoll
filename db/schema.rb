@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120624115330) do
+ActiveRecord::Schema.define(:version => 20120624145303) do
 
   create_table "candidates", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20120624115330) do
     t.integer  "local_poll_id"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+    t.integer  "votes_count"
   end
 
   create_table "constituencies", :force => true do |t|
