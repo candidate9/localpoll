@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class LocalPollTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+  should belong_to :poll
+  should have_many :candidates
+
 end

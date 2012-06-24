@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class CandidateTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+  should belong_to :political_party
+  should have_many :votes
+
 end
