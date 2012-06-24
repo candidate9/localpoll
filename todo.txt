@@ -3,7 +3,12 @@
 
 8  25 min sprints
 
+TODOS
 
 a) Sketch out app and the main flow
 b) Sketch out domain model and create basic AR models
-c)
+c) Candidate lists on local constituency pages
+d) Voting in local constituency
+e) Poll results for local constituency
+f) Poll results nationally
+g) Constituency postcode lookup
