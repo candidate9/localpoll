@@ -1,0 +1,18 @@
+<% content_for :title, "Local Poll" %>
+
+
+<article>
+  <header><h1>Local Poll</h1></header>
+
+  <ol>
+    <li>Find out who's standing in your local constituency</li>
+    <li>Vote in our unscientific poll</li>
+    <li>See the poll results for your area</li>
+  </ol>
+
+  <%= form_tag post_codes_path, :method => :get do %>
+    <%= text_field_tag :postcode %>
+    <%= submit_tag "Go" %>
+  <% end %>
+
+</article>
