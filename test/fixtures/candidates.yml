@@ -1,0 +1,18 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+nick_black:
+  name: Nick Black
+  link: http://nickblackforedinburgh.com
+  political_party: Labour
+  local_poll: edinburgh_general_election_2012
+
+mr_happy:
+  name: Mr Happy
+  link:
+  local_poll: edinburgh_general_election_2012
+
+jason_stubbs:
+  name: Jason Stubbs
+  link: http://jason-stubbs.com
+  political_party: conservatives
+  local_poll: edinburgh_general_election_2012
