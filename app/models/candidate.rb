@@ -5,4 +5,9 @@ class Candidate < ActiveRecord::Base
   belongs_to :local_poll
   has_many :votes
 
+
+  def affilliation
+    political_party ? political_party.name : "Independent"
+  end
+
 end

@@ -1,0 +1,16 @@
+<% content_for :title, @local_poll.name %>
+
+<article>
+  <header><h1>Candidates</h1></header>
+
+  <ul>
+    <% @local_poll.candidates.each do |candidate| %>
+      <%= content_tag "li" do %>
+        <%= content_tag "span", candidate.name, :class => :name %>
+        <%= content_tag "span", candidate.affilliation, :class => :affilliation %>
+        <%= link_to "Website", candidate.link if candidate.link? %>
+      <% end %>
+    <% end %>
+  </ul>
+
+</article>
