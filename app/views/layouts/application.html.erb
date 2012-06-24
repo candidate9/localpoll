@@ -2,12 +2,14 @@
 <html>
 <head>
   <title>Local Poll - <%= yield :title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= link_to "Local Poll", root_path %>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
