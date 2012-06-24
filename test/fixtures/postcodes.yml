@@ -1,0 +1,5 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+m12_45a:
+  name: M12 45A
+  constituency: edinburgh
