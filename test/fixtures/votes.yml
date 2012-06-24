@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+mr_happy_vode:
+  candidate: mr_happy
+  local_poll: edinburgh_general_election_2012
+
+nick_black_vote:
+  candidate: nick_black
+  local_poll: edinburgh_general_election_2012
+
+another_nick_black_vote:
+  candidate: nick_black
+  local_poll: edinburgh_general_election_2012
+
+none_of_the_above_vote:
+  local_poll: edinburgh_general_election_2012
